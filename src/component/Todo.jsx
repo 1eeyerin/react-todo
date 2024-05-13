@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { css } from "@emotion/react";
 
 const Todo = () => {
@@ -6,12 +7,8 @@ const Todo = () => {
       <strong css={titleStyle}>리액트 공부하기</strong>
       <p css={contentStyle}>기초 공부하기</p>
       <div css={buttonWrapStyle}>
-        <button css={buttonStyle} type="button">
-          삭재하기
-        </button>
-        <button css={buttonStyle} type="button">
-          완료
-        </button>
+        <Button>삭제하기</Button>
+        <Button variant="outline">완료</Button>
       </div>
     </div>
   );
