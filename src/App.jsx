@@ -1,3 +1,4 @@
+import "@/app/globals.css";
 import Header from "./component/Header";
 import TodoList from "./component/TodoList";
 import WriteForm from "./component/WriteForm";

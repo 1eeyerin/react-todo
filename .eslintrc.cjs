@@ -14,7 +14,7 @@ module.exports = {
   rules: {
     "react/jsx-no-target-blank": "off",
     "react/no-unknown-property": ["error", { ignore: ["css"] }], //emotion
-    "react/prop-types": "off",
+    "react/prop-types": "off", // prop-types 맞추라는 경고 무시
     "react-refresh/only-export-components": [
       "warn",
       { allowConstantExport: true },
