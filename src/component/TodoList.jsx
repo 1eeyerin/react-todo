@@ -1,5 +1,5 @@
 import { css } from "@emotion/react";
-import Todo from "./Todo";
+import { CardWithForm } from "./CardWithForm";
 
 const TodoList = ({ title }) => {
   return (
@@ -7,7 +7,7 @@ const TodoList = ({ title }) => {
       <strong css={titleStyle}>{title}</strong>
       <ul css={listStyle}>
         <li css={itemStyle}>
-          <Todo />
+          <CardWithForm />
         </li>
       </ul>
     </section>
@@ -33,9 +33,6 @@ const listStyle = css`
 
 const itemStyle = css`
   width: calc(20% - 8px);
-  padding: 30px 26px;
-  border-radius: 4px;
-  background-color: #dddddd;
 `;
 
 export default TodoList;

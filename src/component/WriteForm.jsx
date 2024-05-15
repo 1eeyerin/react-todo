@@ -1,41 +1,50 @@
-import { css } from "@emotion/react";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { useForm } from "react-hook-form";
 
 const WriteForm = () => {
+  const form = useForm({
+    defaultValues: {
+      username: "",
+    },
+  });
+
+  const onSubmit = (values) => {
+    console.log(values);
+  };
+
   return (
-    <form css={formStyle}>
-      <label htmlFor="subject">제목</label>
-      <input css={inputStyle} type="text" id="subject" />
-      <label htmlFor="content">내용</label>
-      <input css={inputStyle} type="text" id="content" />
-      <button css={submitBtnStyle} type="submit">
-        추가하기
-      </button>
-    </form>
+    <Form {...form}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+        <FormField
+          control={form.control}
+          name="username"
+          render={({ field }) => (
+            <FormItem>
+              <FormLabel>Username</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+              <FormLabel>dddd</FormLabel>
+              <FormControl>
+                <Input placeholder="shadcn" {...field} />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
+        <Button type="submit">Submit</Button>
+      </form>
+    </Form>
   );
 };
-
-const formStyle = css`
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  align-items: center;
-  background-color: #333;
-  color: #ffffff;
-  gap: 10px;
-`;
-
-const inputStyle = css`
-  height: 45px;
-  width: 250px;
-  border-radius: 4px;
-`;
-
-const submitBtnStyle = css`
-  border-radius: 4px;
-  height: 45px;
-  color: #ffffff;
-  width: 90px;
-  background-color: #9297bf;
-`;
 
 export default WriteForm;
