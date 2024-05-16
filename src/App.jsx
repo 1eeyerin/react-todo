@@ -2,7 +2,7 @@ import "@/app/globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
 import { Container, Header } from "components/layout";
-import { TodoForm, TodoList } from "components/todo";
+import { TodoForm, TodoSection } from "components/todo";
 import { useState } from "react";
 import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
 
@@ -78,13 +78,13 @@ const App = () => {
       <Header />
       <Container>
         <TodoForm onAddTodo={addTodo} />
-        <TodoList
+        <TodoSection
           title="Working... 🔥"
           todos={todos.filter((todo) => !todo.isDone)}
           handleDeleteTodo={deleteTodo}
           handleChangeTodoState={changeTodoState}
         />
-        <TodoList
+        <TodoSection
           title="Done... 🌟"
           todos={todos.filter((todo) => todo.isDone)}
           handleDeleteTodo={deleteTodo}
