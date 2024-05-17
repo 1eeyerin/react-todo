@@ -1,4 +1,4 @@
-import { Todo } from "components/Todo";
+import { Todo } from "@/src/components/Todo";
 
 const TodoList = ({ todos, handleDeleteTodo, handleChangeTodoState }) => {
   return (

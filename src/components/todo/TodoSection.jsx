@@ -1,4 +1,4 @@
-import { TodoList } from "components/Todo";
+import { TodoList } from "@/src/components/Todo";
 
 const EmptyMessage = () => {
   return (
@@ -34,6 +34,7 @@ const TodoSection = ({
   return (
     <Wrapper title={title}>
       <TodoList
+        todos={todos}
         handleDeleteTodo={handleDeleteTodo}
         handleChangeTodoState={handleChangeTodoState}
       />

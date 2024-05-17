@@ -1,8 +1,8 @@
 import "@/app/globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { useToast } from "@/components/ui/use-toast";
-import { Container, Header } from "components/layout";
-import { TodoForm, TodoSection } from "components/todo";
+import { Container, Header } from "@/src/components/Layout";
+import { TodoForm, TodoSection } from "@/src/components/Todo";
 import { useState } from "react";
 import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
 
