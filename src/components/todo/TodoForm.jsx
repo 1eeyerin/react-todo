@@ -1,4 +1,5 @@
-import { Button } from "@/components/ui/button";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { Button } from "@shadcn-ui/button";
 import {
   Form,
   FormControl,
@@ -6,9 +7,8 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { zodResolver } from "@hookform/resolvers/zod";
+} from "@shadcn-ui/form";
+import { Input } from "@shadcn-ui/input";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 

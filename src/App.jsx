@@ -1,10 +1,10 @@
-import "@/app/globals.css";
-import { Toaster } from "@/components/ui/toaster";
-import { useToast } from "@/components/ui/use-toast";
-import { Container, Header } from "@/src/components/Layout";
-import { TodoForm, TodoSection } from "@/src/components/Todo";
+import "@shadcn-app/globals.css";
+import { Toaster } from "@shadcn-ui/toaster";
+import { useToast } from "@shadcn-ui/use-toast";
+import { Container, Header } from "components/Layout";
+import { TodoForm, TodoSection } from "components/Todo";
 import { useState } from "react";
-import { getLocalStorage, setLocalStorage } from "./utils/localStorage";
+import { getLocalStorage, setLocalStorage } from "utils/localStorage";
 
 const STORAGE_NAME = "todos";
 

@@ -7,8 +7,11 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": path.resolve(__dirname, "."),
+      "@shadcn-ui": path.resolve(__dirname, "./src/@shadcn/ui"),
+      "@shadcn-lib": path.resolve(__dirname, "./src/@shadcn/lib"),
+      "@shadcn-app": path.resolve(__dirname, "./src/@shadcn/app"),
       components: path.resolve(__dirname, "./src/components"),
+      utils: path.resolve(__dirname, "./src/utils"),
     },
   },
 });

@@ -1,11 +1,11 @@
-import { Button } from "@/components/ui/button";
+import { Button } from "@shadcn-ui/button";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
+} from "@shadcn-ui/card";
 
 const Todo = ({
   id,

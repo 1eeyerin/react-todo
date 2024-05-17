@@ -1,4 +1,4 @@
-import { TodoList } from "@/src/components/Todo";
+import { TodoList } from "components/Todo";
 
 const EmptyMessage = () => {
   return (

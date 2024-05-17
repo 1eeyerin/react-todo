@@ -1,5 +1,5 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Button } from "@/components/ui/button";
+import { Avatar, AvatarFallback, AvatarImage } from "@shadcn-ui/avatar";
+import { Button } from "@shadcn-ui/button";
 
 const Header = () => {
   return (
