@@ -3,7 +3,7 @@ import path from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/sparta-todo/",
+  base: "/react-todo/",
   plugins: [react()],
   resolve: {
     alias: {
